@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-inicial{
+    margin-top: 100px;
+    width: 1500px;
+    height: 600px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.boton-simulador{
+    margin: 15px 25px 15px 25px;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
