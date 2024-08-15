@@ -114,3 +114,20 @@ console.log(mothers)
 // Unshift para agregar al inicio del array y shift para sacar el primero
 // En el splice el primer parametro hace referencia al inicio de donde se empieza a borrar y el segundo parametro, a cuantos numeros quiero borrar
 
+const motherStock = [
+    {nombre: "Asrock Z390", precio: 74900},
+    {nombre: "Asrock H510M", precio: 75700},
+    {nombre: "Asrock H610M", precio: 75800}
+]
+
+const busqueda = motherStock.find((placa) =>  placa.nombre) === "Asrock Z390"
+console.log(busqueda)
+
+const busquedaPrecio = motherStock.find((placa) => placa.precio) === "75700"
+console.log(busquedaPrecio)
+
+const nombresPlacasMadres = motherStock.map((placas) => placas.nombre)
+console.log(nombresPlacasMadres)
+
+console.log(Math.min(74900, 75700, 75800))
+console.log(Math.max(74900, 75700, 75800))
