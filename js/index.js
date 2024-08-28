@@ -131,3 +131,43 @@ console.log(nombresPlacasMadres)
 
 console.log(Math.min(74900, 75700, 75800))
 console.log(Math.max(74900, 75700, 75800))
+
+const darkMode = document.querySelector(`#modoOscuro`)
+
+const cuerpo = document.body;
+
+const contenedoresPag = document.querySelector(`#main-contenedor`)
+
+const headerPag = document.header
+
+const nombreDelProducto = document.getElementsByClassName("nombreProducto")
+
+const nombres1 = document.getElementsByClassName('nombre-hardware')
+
+darkMode.addEventListener("click", () => {
+    cuerpo.style.backgroundColor = "black"
+    contenedoresPag.style.backgroundColor = "black"
+    nombres1.style.color = 'red'
+})
+
+const lightMode = document.querySelector(`#modoClaro`)
+
+lightMode.addEventListener("click", () => {
+    cuerpo.style.backgroundColor = "white";
+    document.getElementById(`main-contenedor`).style.backgroundColor= "blue"
+})
+
+    const formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const nombreUser = document.getElementById("nombreFormulario").value;
+    const contrasenaUser = document.getElementById("contraseniaFormulario").value;   
+
+    const formUser = {
+        nombre: nombreUser,
+        Contraseña: contrasenaUser,
+    };
+
+
+    localStorage.setItem("formUser", JSON.stringify(formUser));
+});
